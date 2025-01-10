@@ -24,6 +24,19 @@ One pointer starts at the beginning of the array (left), and the other starts at
 The elements at these two positions are swapped, and the pointers move towards the center.
 This process continues until the pointers meet or cross each other.
 
+```
+def reverse_array(nums):
+    left = 0
+    right = len(nums) - 1
+    
+    while left < right:
+        nums[left], nums[right] = nums[right], nums[left]
+        left += 1
+        right -= 1
+    
+    return nums
+```
+
 #### How to Use?
 Clone this repository to your local machine.
 Run the Python script to see the reverse function in action.
