@@ -43,14 +43,21 @@ Run the Python script to see the reverse function in action.
 
 
 #### Example Usage
+
+```
 nums = [1, 2, 3, 4, 5]
 print("Original Array:", nums)
 reversed_nums = reverse_array(nums)
 print("Reversed Array:", reversed_nums)
+```
+
 
 #### Output
+
+```
 Original Array: [1, 2, 3, 4, 5]
 Reversed Array: [5, 4, 3, 2, 1]
+```
 
 #### Contributing
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request.
@@ -68,8 +75,10 @@ Bu depo, bir diziyi (listeyi) yerinde tersine çevirmek için basit bir Python f
 Bir tam sayı dizisi verildiğinde, diziyi yerinde tersine çevirmelisiniz, yani ekstra bir dizi kullanmadan orijinal dizi üzerinde işlem yapmalısınız. Bu, dizinin elemanlarının ters sırayla düzenlenmesi gerektiği anlamına gelir.
 
 #### Örnek
+```
 Girdi: [1, 2, 3, 4, 5]
 Çıktı: [5, 4, 3, 2, 1]
+```
 
 
 #### Çözüm
@@ -80,21 +89,39 @@ Bu iki pozisyondaki elemanlar değiştirilir ve göstergeler merkeze doğru hare
 Bu işlem, göstergeler birbirine yaklaşana veya birbirini geçene kadar devam eder.
 
 
+```
+def reverse_array(nums):
+    left = 0
+    right = len(nums) - 1
+    
+    while left < right:
+        nums[left], nums[right] = nums[right], nums[left]
+        left += 1
+        right -= 1
+    
+    return nums
+```
+
+
 #### Kullanım
 Bu depoyu yerel bilgisayarınıza klonlayın.
 Python betiğini çalıştırarak tersine çevirme fonksiyonunu gözlemleyin.
 
 
 #### Örnek Kullanım
+```
 nums = [1, 2, 3, 4, 5]
 print("Orijinal Dizi:", nums)
 reversed_nums = reverse_array(nums)
 print("Ters Çevrilmiş Dizi:", reversed_nums)
+```
 
 
 #### Çıktı
+```
 Orijinal Dizi: [1, 2, 3, 4, 5]
 Ters Çevrilmiş Dizi: [5, 4, 3, 2, 1]
+```
 
 #### Katkı Sağlamak
 Bu projeye katkı sağlamak isterseniz, depo üzerinde fork yapabilir ve bir pull request gönderebilirsiniz.
