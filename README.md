@@ -10,11 +10,11 @@ Given an array of integers, the goal is to reverse the array in-place without us
 
 #### Example
 
-```plaintext
+```
 Input: [1, 2, 3, 4, 5]
-Output: [5, 4, 3, 2, 1] 
+Output: [5, 4, 3, 2, 1]  ```
 
-`plaintext 
+
 
 Solution
 The solution uses a two-pointer technique:
