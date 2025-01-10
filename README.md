@@ -14,8 +14,9 @@ Given an array of integers, the goal is to reverse the array in-place without us
 Input: [1, 2, 3, 4, 5]
 Output: [5, 4, 3, 2, 1] 
 
+`plaintext 
 
-##Solution
+Solution
 The solution uses a two-pointer technique:
 
 One pointer starts at the beginning of the array (left), and the other starts at the end (right).
