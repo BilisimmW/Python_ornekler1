@@ -1,4 +1,4 @@
-# Python_ornekler1
+# DİZİYİ TERSİNE ÇEVİR
 
 ![ALGORİTMA ALIŞTIRMALARI ](https://github.com/user-attachments/assets/7b94af42-4a4d-4d11-b3b5-516c1c4b9b14)
 
